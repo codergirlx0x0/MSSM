@@ -1,0 +1,123 @@
+"ASDAOOInterviewVerbality.png"
+Corresponding code: ASDAOOVerbalityInterview.py
+-Filters ADE,Epi patients with chart completed reviews
+Looks at the correlation of AoO ASD and Verbality by looking at the break up of 5 types of verbality statuses from Interview 
+
+intractableEpiAnalysis.pdf Page 2-5 
+Corresponding code:ASDEPI_Intractable.py
+Purpose: Looks at the correlation of Intractable Epi and other variables such as ID,DD,Verbality
+There will be two panels in each of the pages: the top panel refers to values that have nan in them, which are including in the default category. The bottom panel omits nan values
+
+intractableEpiAnalysis.pdf Page 1
+Corresponding code:ASDEPI_Intractable.py
+Purpose: Looks at the correlation of Intractable Epi and each type of epilepsy
+I omit the nan and unknown values
+
+Correlations_CategoricalVariables.pdf Page All
+Purpose: Looks at the correlation of categorical variables such as ID,DD,Verbality among the different sources
+Corresponding code:"categoricalVariablesPairwise.py"
+I omitted the nan and unknown values
+I jittered the x and y values
+O:false
+1:True
+
+chartedAnalysis.pdf Page 1-5
+Purpose: Looks at the counts of each variable non nan and non unknown values of the subgroup of completed chart reviewed patients
+Correspondingcode:"chartedAnalysis.py"
+Looks through subset of completed chart reviews
+
+chartedAnalysis.pdf Page 6
+Purpose: Looks at the coverage of each ASD EPI aoo and aod data sources variable with non nan and non unknown values of the subgroup of completed chart reviewed patients
+Corresponding code:"chartedASD-Epi.py"
+Looks through subset of completed chart reviews
+Omits nan and unknown values
+
+chartedAnalysis.pdf Page 7
+Purpose: Looks at the coverage of ech data sources of the categorical variables of the subgroup of completed chart reviewed patients
+Corresponding code:"chartedCategoricalVariables.py"
+Looks through subset of completed chart reviews
+Omits nan and unknown values
+
+coverageResults_2variables.png and coverageResultsASD-AOO.png
+Purpose: Looks at the coverage results of all the variables of each sources without taking into consideration completed chart reviews
+Corresponding code: coverageResults.py
+same code as chartedCategoricalVariables.py" and "chartedASD-Epi.py" but removes the check for completed chart reviews
+Does not take into account completed chart reviews
+
+"EERefvschart.png" "LFEChartvsInt.png" "NAFEChartvsInt.png" "IGEChartvsInt.png" "EEChartvsInt.png" "LFERefvsInt.png" "NAFERefvsInt.png" "IGERefvsInt.png" "EERefvsInt.png" "LFERefvsChart.png" "NAFERefvsChart.png" "IGERefvsChart.png" 
+Purpose: This looks at the correlation between each pair of the (total 3) different sources of epi types: We look at the line of best fit and r2 value
+Corresponding code: pairwise.py
+
+Correlations_ASDEPI.pdf
+Purpose: This looks at the correlation between each pair of the (total 4) different sources of ASD-EPI aoo and aod types: We look at the line of best fit and r2 value
+Corresponding code: pairwiseASDEPI.py
+0 is false and 1 is True
+
+associativityAnalysis.pdf page 8
+Purpose: Looks at the associativity between Epi Aoo and Verbality and splits into two categories: verbal/nonverbal percents fo Age 3 or less and verbal/nonverbal percents for Age 3+
+Corresponding code: VerablityassociativityEpiAoO.py
+
+associativityAnalysis.pdf page 7
+Purpose: Looks at the associativity between ASD Aoo and Verbality and splits into two categories: verbal/nonverbal percents fo Age 2 or less and verbal/nonverbal percents for Age 2+
+Corresponding code: VerablityassociativityASDAoO.py
+
+associativityAnalysis.pdf page 6
+Purpose: Looks at the associativity between ASD Aoo and Epi types and splits into two categories: epi types (4 types) percents fo Age 2 or less and epi types percents for Age 2+
+Corresponding code: epiTypeassociativityASDAOO.py
+
+associativityAnalysis.pdf page 5
+Purpose: Looks at the associativity between Epi Aoo and Epi types and splits into two categories: epi types (4 types) percents fo Age 3 or less and epi types percents for Age 3+
+Corresponding code: epiTypeassociativityEpiAOO.py
+
+associativityAnalysis.pdf page 4
+Purpose: Looks at the associativity between ASD Aoo and Mri statuses and splits into two categories: mri status (3 types) percents fo Age 2 or less and mri percents for Age 2+
+Corresponding code: mriassociativityASDAOO.py
+
+associativityAnalysis.pdf page 3
+Purpose: Looks at the associativity between ASD Aoo and Mri statuses and splits into two categories: mri status (3 types) percents fo Age 3 or less and mri percents for Age 3+
+Corresponding code: mriassociativityEpiAOO.py
+
+associativityAnalysis.pdf page 2
+Purpose: Looks at the associativity between ASD Aoo and DDstatuses and splits into two categories: DDstatus (3 types) percents fo Age 2 or less and DDpercents for Age 2+
+Corresponding code: DDassociativityASDAOO.py
+
+associativityAnalysis.pdf page 1
+Purpose: Looks at the associativity between Epi Aoo and DD statuses and splits into two categories: DD status (3 types) percents for Age 3 or less and DD percents for Age 3+
+Corresponding code: DDassociativityEpiAOO.py
+
+associativityAnalysisUpdated.pdf page 1
+Purpose: Looks at the associativity between ASD Aoo and DD statuses and splits into two categories: ID status (3 types) percents for Age 2 or less and ID percents for Age 2+
+Corresponding code: IDassociativityASDAOO.py
+
+"DDChartvInterview.png" "DDIntractable.png" "DD-PracticalSocialConceptual-Chart.png" "DD-PracticalSocialConceptual-Interviewt.png"
+Purpose:Looks at the developmental Delay domains:Practical,Social,Conceptual and their correlation within the two data sources: chart and interview
+Corresponding code: developmentalDomain.py
+Omits nan and unknown values
+Doesn't look at subset of charted reviews
+
+mriAnalysis.pdf page 2
+Purpose: Looks at the correlation between mri and DD by looking at percent of chart review complete population that has/doesn't have DDin each of the mri status categories
+Corresponding graphs: mriDD.py
+I omit nan and unknown values
+
+mriAnalysis.pdf page 1
+Purpose: Looks at the correlation between mri and ID by looking at percent of chart review complete population that has/doesn't have IDin each of the mri status categories
+Corresponding graphs: mriID.py
+I omit nan and unknown values
+
+mriAnalysis.pdf page 3
+Purpose: Looks at the correlation between mri and verbality by looking at percent of chart review complete population that has/doesn't have verbal in each of the mri status categories
+Corresponding graphs: mriVerbalityComparison.py
+I omit nan and unknown values
+
+ASD-EpiCohort.png
+Purpose: Looks at AoO and AoD spread within each age group
+Corresponding Code: mssm-Phenotype_pt1.py
+
+"AoD_rangeCV.png" "AoO_rangeCV.png" 
+Purpose:Looks at the range (mos) and CV (ratio) for ASD AOO and EPIAOO, ASD AOD and EpiAOD as a scatter plot
+Corresponding code: dispersion.py
+Removes the nan and unknown values
+There are twin axis to easily differentiate
+
+
